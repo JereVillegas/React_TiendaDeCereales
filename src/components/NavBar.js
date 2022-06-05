@@ -1,19 +1,29 @@
+import "./styles/NavBar.css";
 import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
-    <nav>
-      <h3>Elegí tu tipo de cereal</h3>
-      <div>
-        <button>Tradicionales</button>
-        <button>Granola</button>
-        <button>Almohaditas</button>
-        <button>Integral</button>
-        <button>Para niños</button>
-      </div>
+    <div>
       <CartWidget />
-    </nav>
+      <nav>
+        <button>
+          <a href="#">Tradicional</a>
+        </button>
+        <button>
+          <a href="#">Granola</a>
+        </button>
+        <button>
+          <a href="#">Almohaditas</a>
+        </button>
+        <button>
+          <a href="#">Integral</a>
+        </button>
+        <button>
+          <a href="#">Niños</a>
+        </button>
+        <input type="search" placeholder="Buscar..." aria-label="Search" />
+      </nav>
+    </div>
   );
 };
-
 export default NavBar;
